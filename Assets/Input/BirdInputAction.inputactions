@@ -1,0 +1,34 @@
+{
+    "name": "BirdInputAction",
+    "maps": [
+        {
+            "name": "Bird",
+            "id": "4a4fad13-326b-4615-9b91-a971d5626171",
+            "actions": [
+                {
+                    "name": "Tap",
+                    "type": "Button",
+                    "id": "f4cad830-c76a-4761-8756-ac1a095f2a2f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "48ea8faa-53a4-4b79-b2fc-6d0951ad834a",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
