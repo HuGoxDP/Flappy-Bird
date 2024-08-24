@@ -17,5 +17,20 @@ MonoBehaviour:
     - 3fc8acdd13e6c734bafef6554d6fdbcd
     values:
     - goDatas_byGlobalId:
-        keys: []
-        values: []
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-3fc8acdd13e6c734bafef6554d6fdbcd-1178970850-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3fc8acdd13e6c734bafef6554d6fdbcd-338416909-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3fc8acdd13e6c734bafef6554d6fdbcd-1188852335-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3fc8acdd13e6c734bafef6554d6fdbcd-811595810-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3fc8acdd13e6c734bafef6554d6fdbcd-519420028-0
+        values:
+        - colorIndex: 4
+          iconNameOrGuid: 
+        - colorIndex: 0
+          iconNameOrGuid: Canvas Icon
+        - colorIndex: 3
+          iconNameOrGuid: 
+        - colorIndex: 2
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon

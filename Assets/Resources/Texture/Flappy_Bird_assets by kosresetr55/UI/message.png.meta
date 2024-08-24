@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -160,7 +160,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: message_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 219
+        width: 178
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bd7c056d53d344a9c54741a64b6594
+      internalID: -2095664485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: message_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 66
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a28b4697de96d4e8c0597dbbf91d3e
+      internalID: 711342671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: message_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 46
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86f960b8191d1345b74df0e476975ff
+      internalID: -431074951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: message_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfa34e01078efe40984138ab0e88665
+      internalID: -924000964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -171,7 +255,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      message_0: -2095664485
+      message_1: 1813539844
+      message_10: -1957832800
+      message_11: -924000964
+      message_12: -1248887621
+      message_13: -774386795
+      message_2: -487497418
+      message_3: -775810496
+      message_4: -1101671157
+      message_5: 711342671
+      message_6: -737176869
+      message_7: 1328375535
+      message_8: -431074951
+      message_9: -1985941774
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

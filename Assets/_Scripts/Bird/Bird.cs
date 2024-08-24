@@ -74,6 +74,7 @@ namespace _Scripts.Bird
         private void Jump(InputAction.CallbackContext callbackContext)
         {
             _rigidbody2D.velocity = Vector2.up * _jumpForce;
+            AudioManager.Instance.PlaySFX("Wing");
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -81,6 +82,7 @@ namespace _Scripts.Bird
             if (other.gameObject.CompareTag("Pipe"))
             {
                 OnPointTake?.Invoke();
+                AudioManager.Instance.PlaySFX("Point");
             }
         }
 
@@ -91,12 +93,15 @@ namespace _Scripts.Bird
             {
                 _birdControl.DisableControl();
                 other.collider.enabled = false;
+                AudioManager.Instance.PlaySFX("Die");
             }
             else
             {
                 _birdControl.DisableControl();
                 _animator.enabled = false;
                 _rigidbody2D.simulated = false;   
+                AudioManager.Instance.PlaySFX("Hit");
+
             }
         }
     }

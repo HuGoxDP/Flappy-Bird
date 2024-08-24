@@ -1,18 +1,19 @@
-﻿using _Scripts.Pipe;
+﻿using System;
+using _Scripts.Pipe;
+using _Scripts.UI;
+using R3;
 using UnityEngine;
 
 namespace _Scripts
 {
     public class Game : MonoBehaviour
     {
-        public static bool IsGamePaused => _isGamePaused;
+        public static bool IsGamePaused { get; private set; } = true;
 
         [SerializeField] private Bird.Bird _bird;
         [SerializeField] private PipeSpawner _pipeSpawner;
-
-        private static bool _isGamePaused = true;
-
-
+        [SerializeField] private Score _score;
+        [SerializeField] private EndGamePopup _endGamePopup;
         private int _points;
 
         private void Awake()
@@ -33,17 +34,27 @@ namespace _Scripts
         {
             Debug.Log("Add Point");
             _points++;
+            _score.OnScoreUpdate?.Invoke(_points);
         }
 
         private void StopGame()
         {
-            _isGamePaused = true;
+            IsGamePaused = true;
+            Observable.Interval(TimeSpan.FromMilliseconds(2000))
+                .Take(1)
+                .Subscribe(_ =>
+                    {
+                        _endGamePopup.gameObject.SetActive(true);
+                        _endGamePopup.OnScoreUpdate?.Invoke(_points);
+                    }, 
+                    _ => Debug.Log($"Show {_endGamePopup}"))
+                .AddTo(_endGamePopup);
         }
         
         private void StartGame()
         {
             _bird.OnGameStart -= StartGame;
-            _isGamePaused = false;
+            IsGamePaused = false;
             _pipeSpawner.StartSpawning();
         }
     }
